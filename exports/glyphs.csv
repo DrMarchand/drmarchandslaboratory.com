@@ -1,0 +1,53 @@
+glyph_id,family,code,display_text,display_emoji,normalized,can_run_alone,notes
+letter_A,letter,A,A,A,a,1,Latin uppercase letter
+letter_B,letter,B,B,B,b,1,Latin uppercase letter
+letter_C,letter,C,C,C,c,1,Latin uppercase letter
+letter_D,letter,D,D,D,d,1,Latin uppercase letter
+letter_E,letter,E,E,E,e,1,Latin uppercase letter
+letter_F,letter,F,F,F,f,1,Latin uppercase letter
+letter_G,letter,G,G,G,g,1,Latin uppercase letter
+letter_H,letter,H,H,H,h,1,Latin uppercase letter
+letter_I,letter,I,I,I,i,1,Latin uppercase letter
+letter_J,letter,J,J,J,j,1,Latin uppercase letter
+letter_K,letter,K,K,K,k,1,Latin uppercase letter
+letter_L,letter,L,L,L,l,1,Latin uppercase letter
+letter_M,letter,M,M,M,m,1,Latin uppercase letter
+letter_N,letter,N,N,N,n,1,Latin uppercase letter
+letter_O,letter,O,O,O,o,1,Latin uppercase letter
+letter_P,letter,P,P,P,p,1,Latin uppercase letter
+letter_Q,letter,Q,Q,Q,q,1,Latin uppercase letter
+letter_R,letter,R,R,R,r,1,Latin uppercase letter
+letter_S,letter,S,S,S,s,1,Latin uppercase letter
+letter_T,letter,T,T,T,t,1,Latin uppercase letter
+letter_U,letter,U,U,U,u,1,Latin uppercase letter
+letter_V,letter,V,V,V,v,1,Latin uppercase letter
+letter_W,letter,W,W,W,w,1,Latin uppercase letter
+letter_X,letter,X,X,X,x,1,Latin uppercase letter
+letter_Y,letter,Y,Y,Y,y,1,Latin uppercase letter
+letter_Z,letter,Z,Z,Z,z,1,Latin uppercase letter
+number_0,number,0,0,0,0,1,Arabic numeral
+number_1,number,1,1,1,1,1,Arabic numeral
+number_2,number,2,2,2,2,1,Arabic numeral
+number_3,number,3,3,3,3,1,Arabic numeral
+number_4,number,4,4,4,4,1,Arabic numeral
+number_5,number,5,5,5,5,1,Arabic numeral
+number_6,number,6,6,6,6,1,Arabic numeral
+number_7,number,7,7,7,7,1,Arabic numeral
+number_8,number,8,8,8,8,1,Arabic numeral
+number_9,number,9,9,9,9,1,Arabic numeral
+symbol_atom_emoji,symbol,atom_emoji,⚛️,⚛️,atom_emoji,1,Atomic emoji form
+symbol_atom_text,symbol,atom_text,⚛︎,⚛️,atom,1,Atomic text form
+symbol_canvas,symbol,canvas,🎨,🎨,canvas,1,Canvas mark
+symbol_cloud,symbol,cloud,☁,☁,cloud,1,Cloud bridge mark
+symbol_core,symbol,core,❇️,❇️,core,1,Core declaration mark
+symbol_dashboard,symbol,dashboard,🪬,🪬,dashboard,1,Dashboard mark
+symbol_engine,symbol,engine,⚙︎,⚙️,engine,1,Engine mark
+symbol_infinity_emoji,symbol,infinity_emoji,♾️,♾️,infinity_emoji,1,Infinity emoji form
+symbol_infinity_text,symbol,infinity_text,∞,♾️,infinity,1,Infinity text form
+symbol_lab,symbol,lab,🔬,🔬,lab,1,Lab mark
+symbol_library,symbol,library,📚,📚,library,1,Library mark
+symbol_orchard,symbol,orchard,🏝️,🏝️,orchard,1,Orchard mark
+symbol_twin_emoji,symbol,twin_emoji,♊️,♊️,twin_emoji,1,Twin emoji form
+symbol_twin_text,symbol,twin_text,♊︎,♊️,twin,1,Twin text form
+symbol_workbench,symbol,workbench,🪑,🪑,workbench,1,Workbench mark
+symbol_workbench_wheel,symbol,workbench_wheel,☸︎,☸️,workbench_wheel,1,Wheel for the Workbench

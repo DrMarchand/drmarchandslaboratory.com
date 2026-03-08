@@ -1,0 +1,58 @@
+{
+  "authority": "© Design Orchard LLC",
+  "runtime": "🔬 DrMarchand’s Lab⚛︎ratory™",
+  "engine": "⚙︎ Nɛuro-Forge Engine™",
+  "archive": "📚 DrMarchand’s ⚛︎ Library™",
+  "milestones": [
+    {
+      "id": "M0",
+      "label": "Seeded",
+      "class": "bootstrap",
+      "status": "complete"
+    },
+    {
+      "id": "M1",
+      "label": "Observer Online",
+      "class": "observer",
+      "status": "complete"
+    },
+    {
+      "id": "M2",
+      "label": "Bridge Online",
+      "class": "bridge",
+      "status": "complete"
+    },
+    {
+      "id": "M3",
+      "label": "Dashboard Online",
+      "class": "dashboard",
+      "status": "complete"
+    },
+    {
+      "id": "M4",
+      "label": "Vault Green",
+      "class": "storage",
+      "status": "pending"
+    },
+    {
+      "id": "M5",
+      "label": "Purple Mesh",
+      "class": "mesh",
+      "status": "pending"
+    },
+    {
+      "id": "M6",
+      "label": "Lionheart Online",
+      "class": "orchestration",
+      "status": "pending"
+    }
+  ],
+  "current": {
+    "id": "M3",
+    "label": "Dashboard Online"
+  },
+  "next": {
+    "id": "M4",
+    "label": "Vault Green"
+  }
+}

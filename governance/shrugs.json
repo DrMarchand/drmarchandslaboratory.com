@@ -1,0 +1,44 @@
+{
+  "shrugs": [
+    {
+      "id": "SHRUG_STORAGE_UNMOUNTED",
+      "class": "storage",
+      "severity": "primary",
+      "description": "Required reserve or workbench storage is not mounted locally on the checked host."
+    },
+    {
+      "id": "SHRUG_VAULT_OFFLINE",
+      "class": "vault",
+      "severity": "secondary",
+      "description": "The canonical vault host is not yet providing verified readable storage state to this node."
+    },
+    {
+      "id": "SHRUG_BRIDGE_STALE",
+      "class": "bridge",
+      "severity": "secondary",
+      "description": "Bridge state exists but timestamp freshness is outside the accepted verification window."
+    },
+    {
+      "id": "SHRUG_REMOTE_UNREACHABLE",
+      "class": "network",
+      "severity": "secondary",
+      "description": "A required remote endpoint is not reachable."
+    },
+    {
+      "id": "SHRUG_SYNC_PENDING",
+      "class": "sync",
+      "severity": "secondary",
+      "description": "Cloud bridge surfaces are defined but not yet verified."
+    },
+    {
+      "id": "SHRUG_MOBILE_UNCONFIRMED",
+      "class": "mesh",
+      "severity": "secondary",
+      "description": "Mobile presence has not yet been verified in the mesh."
+    }
+  ],
+  "active": [
+    "SHRUG_STORAGE_UNMOUNTED",
+    "SHRUG_VAULT_OFFLINE"
+  ]
+}
