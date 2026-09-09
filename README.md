@@ -1,63 +1,42 @@
 # DrMarchand’s Laboratory
 
-**Operated by:** Design Orchard LLC
+> The research, software, experimentation, and technical-operations lane operated by Design Orchard LLC.
 
-DrMarchand’s Laboratory is an independent research and development environment for software, technical experimentation, automation, security, creative tooling, and system architecture.
+**Protected environment:** 🔬 DrMarchand’s Lab⚛︎ratory™ · **Public repository:** architecture and release-safe documentation only
 
-## Purpose
+## Mission
 
-The Laboratory develops and tests capabilities through small, practical projects. Work may remain experimental, become useful internal tooling, or contribute to an intentionally released service or project.
+The Laboratory turns ideas into tested technical work: research, software, automation, infrastructure, interfaces, and experiments. Useful internal capability is not automatically a public product.
 
-A useful internal capability is not automatically a public product.
+## System boundaries
 
-## Internal execution
+| Surface | Role |
+| --- | --- |
+| DrMarchand’s Laboratory | Working research and development lane |
+| DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ | Bounded execution and orchestration |
+| DrMarchand’s OS™ | Presentation, navigation, routing, and lifecycle state |
+| 📚 DrMarchand’s ⚛︎ Library™ | Preservation, curation, and recall |
+| KEJ Studio | Sibling creative-production lane |
 
-The Laboratory maintains an internal execution framework used to organize, build, test, validate, route, package, and automate development workflows.
-
-Detailed internal implementation is kept separate from public descriptions unless there is a practical reason to publish it.
-
-Third-party tools, including AI tools where appropriate, may participate in research and development. Their use does not make the Laboratory or its internal execution framework an AI product.
-
-## Basic workflow
-
-```text
-IDEA
-  ↓
-RESEARCH
-  ↓
-LABORATORY
-  ↓
-DESIGN
-  ↓
-BUILD
-  ↓
-TEST
-  ↓
-VERIFY
-  ↓
-OPERATE
-  ↓
-OBSERVE
-  ↓
-PRESERVE
+```mermaid
+flowchart LR
+    IDEA[Idea] --> LAB[Laboratory]
+    LAB --> BUILD[Build / test / validate]
+    BUILD --> ENG[Engine execution]
+    BUILD --> RECORD[Eligible record]
+    RECORD --> LIB[Library custody]
+    ENG --> OS[OS presentation]
 ```
-
-## Laboratory / Library boundary
-
-The Laboratory is an active development environment. DrMarchand’s Library is used for preservation, records, curation, and recall.
-
-A preserved record should not be silently overwritten by later experimental work. Recall creates a working instance for further activity.
 
 ## Publication boundary
 
-This public repository documents the Laboratory at an architectural and milestone level. Public documentation should describe approved capabilities, interfaces, projects, and released artifacts without exposing credentials, secrets, confidential information, private infrastructure, or unnecessary implementation details.
+This public repository may describe architecture, approved interfaces, released work, and reproducible evidence. It should not expose credentials, private infrastructure, storage topology, personal device identity, unpublished production markers, or unnecessary implementation detail.
 
-Documentation describes architecture and intent. Runtime claims should be supported by reproducible evidence.
+Documentation is not runtime proof. A successful command proves that command in the observed environment; it does not automatically establish production health elsewhere.
 
-## Naming rule
+## Authority
 
-Until further notice, `™` and `℠` are reserved only for functional folder names.
+**Legal and operating company:** Design Orchard LLC  
+**Operating DBA:** DrMarchand’s Laboratory
 
-Public prose and ordinary references use unmarked names. A marked folder and the otherwise identical unmarked folder represent the same functional namespace; after contents, permissions, identity, and references are reconciled, the unmarked folder is the preferred compacted home.
-
-Machine identifiers and historical evidence are preserved as observed rather than silently renamed.
+Rights and publication status remain work-specific. Existing licenses and file-specific notices continue to control their own scope.
