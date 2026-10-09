@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="ECHO Terms of Service — Design Orchard LLC">
+<title>ECHO | Terms of Service</title>
+<style>
+:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#e9eef5;background:#080d16}
+*{box-sizing:border-box}body{margin:0;line-height:1.65;background:radial-gradient(ellipse at top,#182a3a 0%,#080d16 58%);min-height:100vh}
+a{color:#8fdbff}a:hover{color:#c4efff}header,main,footer{max-width:920px;margin:auto;padding-left:24px;padding-right:24px}
+header{padding-top:36px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{font-size:1.18rem;font-weight:800;letter-spacing:.18em;color:#fff;text-decoration:none}
+.parent{font-size:.85rem;color:#b1becc}main{padding-top:64px;padding-bottom:80px}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#8fdbff;font-weight:700}
+h1{font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.1;letter-spacing:-.045em;margin:.6rem 0 1rem}
+.lead{color:#b9c7d8;max-width:65ch;font-size:1.08rem}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 34px}
+.pill{border:1px solid #375063;background:#122333;border-radius:99px;padding:6px 13px;font-size:.8rem;color:#c7dce8}
+.panel{background:#101c2b;border:1px solid #2a4055;border-radius:18px;box-shadow:0 18px 55px #0004;padding:clamp(20px,5vw,48px)}
+.notice{border-left:3px solid #d9a955;background:#342b1d;color:#ffe3ac;padding:14px 18px;border-radius:7px;margin-bottom:25px}
+#document{overflow-wrap:anywhere}#document h1{font-size:1.8rem;letter-spacing:-.025em}#document h2{font-size:1.25rem;margin-top:2rem;padding-top:.5rem;border-top:1px solid #263c4d}
+#document p{color:#d0dae6}#document blockquote{border-left:3px solid #6dbbdf;padding-left:16px;color:#bdcddb;margin-left:0}
+#document ul{padding-left:24px}#document strong{color:#fff}#document hr{border:0;border-top:1px solid #2a4055;margin:30px 0}
+.actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px;font-size:.9rem}
+footer{padding-bottom:38px;border-top:1px solid #243749;padding-top:25px;color:#94a7b8;font-size:.85rem}
+code{background:#1e3042;padding:2px 5px;border-radius:4px}
+</style>
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="ECHO home">◉ ECHO</a><span class="parent">Design Orchard LLC · DrMarchand’s Laboratory</span></header>
+<main>
+<div class="eyebrow">Legal / ECHO</div>
+<h1>Terms of Service</h1>
+<p class="lead">The governing terms for ECHO, a Discord integration developed within the Design Orchard LLC ecosystem.</p>
+<div class="meta"><span class="pill" id="status">Checking publication status</span><span class="pill" id="version">Version pending</span><span class="pill" id="effective">Effective date pending</span></div>
+<section class="panel" aria-label="Terms of Service document">
+<div class="notice" id="notice">An approved Terms of Service has not yet been verified. Do not interpret this page as an effective agreement.</div>
+<article id="document" aria-live="polite"><p>Checking the approved GitHub document…</p></article>
+<div class="actions"><a href="https://github.com/DrMarchand/DesignOrchard.LLC/blob/main/legal/echo/TERMS.md" rel="noopener noreferrer">View approved source on GitHub ↗</a><a href="https://github.com/DrMarchand/DesignOrchard.LLC/commits/main/legal/echo/TERMS.md" rel="noopener noreferrer">Revision history ↗</a></div>
+</section>
+</main>
+<footer>© Design Orchard LLC · ECHO legal documentation · <a href="https://github.com/DrMarchand/DesignOrchard.LLC">Company repository</a></footer>
+<script>
+"use strict";
+const source="https://raw.githubusercontent.com/DrMarchand/DesignOrchard.LLC/main/legal/echo/TERMS.md";
+const $=id=>document.getElementById(id);
+function escapeHTML(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function inline(s){return escapeHTML(s).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\`([^\`]+)\`/g,"<code>$1</code>");}
+function render(md){
+ let out=[],inList=false;
+ for(const raw of md.replace(/\r/g,"").split("\n")){
+  const s=raw.trim();
+  if(!s){if(inList){out.push("</ul>");inList=false;}continue;}
+  if(s.startsWith("- ")){if(!inList){out.push("<ul>");inList=true;}out.push("<li>"+inline(s.slice(2))+"</li>");continue;}
+  if(inList){out.push("</ul>");inList=false;}
+  if(/^---+$/.test(s))out.push("<hr>");
+  else if(/^#{1,3} /.test(s)){const n=s.match(/^#+/)[0].length;out.push("<h"+n+">"+inline(s.slice(n+1))+"</h"+n+">");}
+  else if(s.startsWith("> "))out.push("<blockquote>"+inline(s.slice(2))+"</blockquote>");
+  else out.push("<p>"+inline(s)+"</p>");
+ }
+ if(inList)out.push("</ul>");
+ return out.join("\n");
+}
+(async()=>{
+ try{
+  const response=await fetch(source,{cache:"no-store"});
+  if(!response.ok)throw new Error("No approved document is available (HTTP "+response.status+").");
+  const md=await response.text();
+  if(!md.trim()||!/^# ECHO/m.test(md))throw new Error("Approved document did not pass basic content validation.");
+  if(/\b(DRAFT|NOT EFFECTIVE|Pending approval)\b/i.test(md))throw new Error("Document remains a draft.");
+  $("document").innerHTML=render(md);
+  $("status").textContent="Published source";
+  $("version").textContent=(md.match(/\*\*Version:\*\*\s*([^\n]+)/i)||[])[1]||"Version not specified";
+  $("effective").textContent=(md.match(/\*\*Effective date:\*\*\s*([^\n]+)/i)||[])[1]||"Effective date not specified";
+  $("notice").hidden=true;
+ }catch(err){
+  $("status").textContent="Not yet published";
+  $("document").textContent="The approved Terms of Service are not yet available. Please check back after publication.";
+  console.warn("ECHO terms status:",err.message);
+ }
+})();
+</script>
+</body>
+</html>
