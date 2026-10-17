@@ -7,9 +7,9 @@ Author: Joseph Kyle Marchand
 Copyright owner: Joseph Kyle Marchand
 Publisher: Not established absent a work-specific publication record
 
-Operating context: 🔬 DrMarchand’s Lab⚛︎ratory™
-Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine™
-Preservation layer: 📚 DrMarchand’s ⚛︎ Library™
+Operating context: 🔬 DrMarchand’s Lab⚛︎ratory
+Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine
+Preservation layer: 📚 DrMarchand’s ⚛︎ Library
 
 Workbench: execution workspace
 Creative system: DrMarchand’s 🎨 Creative Canvas
@@ -17,5 +17,5 @@ Observer: 🪬 Big Brother
 Bridge: Cloud Bridge
 
 Interpreter: 🦮 Watchdog
-Presentation: DrMarchand’s ∞ OS™ / Lionheart
+Presentation: DrMarchand’s OS™ / Lionheart
 Truth resolution: 🗺️ DrMarchand’s ⚛︎ Atlas

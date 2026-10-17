@@ -7,9 +7,9 @@ Author: Joseph Kyle Marchand
 Copyright owner: Joseph Kyle Marchand
 Publisher: Not established absent a work-specific publication record
 
-Operating context: 🔬 DrMarchand’s Lab⚛︎ratory™
-Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine™
-Preservation layer: 📚 DrMarchand’s ⚛︎ Library™
+Operating context: 🔬 DrMarchand’s Lab⚛︎ratory
+Execution system: DrMarchand’s ⚙︎ Nɛuro-Forge Engine
+Preservation layer: 📚 DrMarchand’s ⚛︎ Library
 
 ⚛︎ / ⚛️ = atomic structure and active core
 ♊︎ / ♊️ = mirrored duality and paired continuity
