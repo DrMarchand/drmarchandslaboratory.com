@@ -1,0 +1,1 @@
+(()=>{'use strict';const start=()=>{document.documentElement.dataset.canvasReady='true';document.dispatchEvent(new CustomEvent('canvas:ready',{detail:{version:'0.1.0'}}));};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();})();
