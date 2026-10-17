@@ -3,7 +3,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/bootstrap.php';
 ?><!doctype html>
 <html lang="en"><head>
-<?php canvas_head('Canvas | DrMarchand’s Laboratory'); ?>
+<?php echo canvas_head('Canvas | DrMarchand’s Laboratory'); ?>
 <meta name="description" content="Canvas is the shared webpage foundation developed within DrMarchand’s Laboratory.">
 </head><body>
 <a class="canvas-skip" href="#main">Skip to content</a>
