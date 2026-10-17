@@ -12,9 +12,9 @@ The Laboratory turns ideas into tested technical work: research, software, autom
 
 | Surface | Role |
 | --- | --- |
-| DrMarchand’s Laboratory | Working research and development lane |
-| DrMarchand’s ⚙︎ Nɛuro-Forge Engine™ | Bounded execution and orchestration |
-| DrMarchand’s OS™ | Presentation, navigation, routing, and lifecycle state |
+| 🔬 DrMarchand’s Lab⚛︎ratory™ | Working research and development lane |
+| ⚙︎ Nɛuro-Forge Engine | Bounded execution and orchestration |
+| DrMarchand’s ∞ OS™ | Presentation, navigation, routing, and lifecycle state |
 | 📚 DrMarchand’s ⚛︎ Library™ | Preservation, curation, and recall |
 | KEJ Studio | Sibling creative-production lane |
 
