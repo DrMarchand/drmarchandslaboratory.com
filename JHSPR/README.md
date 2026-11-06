@@ -1,53 +1,27 @@
 # JHSPR — Jasper
 
-> JHSPR is the proposed polyglot programming-language layer in the connected Design Orchard LLC architecture. It is intended to bring multiple programming languages into a coherent system while retaining their distinct identities and capabilities.
+> Versioned, release-safe architecture documentation for the proposed polyglot programming-language layer of Design Orchard LLC.
 
-**Pronunciation:** Jasper  
-**Architectural context:** Design Orchard LLC / 🔬 DrMarchand’s Lab⚛︎ratory™  
-**Record date:** November 6, 2026  
-**Status:** Architecture statement; implementation and conformance not verified  
-**Publication scope:** Public, release-safe description for review; not a completed release announcement
+**Record ID:** `DO.DML.JHSPR.1`  
+**Current documentation version:** `0.0.1` (`initializing`)  
+**Status:** `working_record_unverified` — not a tested language runtime or software release
 
-## What JHSPR is intended to do
+## Current version
 
-JHSPR is described by its architect as a polyglot programming-language system that loads participating language(s). A language must be identified and exist before its code can be displayed through an interface. The language definition, implementation, data, interface, runtime, and authority to execute are separate responsibilities.
-
-**Intent is not proof:** This directory currently documents the concept. It does not contain a demonstrated JHSPR parser, language loader, interpreter, compiler, runtime, adapter package, or passing conformance suite.
-
-## Component responsibilities
-
-| Layer | Stated role | Boundary |
+| Version | State | Versioned record |
 | --- | --- | --- |
-| **JHSPR (Jasper)** | Polyglot language layer and proposed language-loading coordination | Does not itself prove that a language implementation is available |
-| **MURI — Marchand Universal Runtime Interface** | Presents code and supports inspection and interaction | Does not create languages or independently authorize execution |
-| **DOLSA** | Defines applicable language, package, interface, and governance contracts | Standards do not prove conformance or grant run permission |
-| **DrMarchand’s ⚙︎ Nɛuro-Forge Engine** | Orchestrates and validates operations within delegated permission | Does not make itself the language, legal authority, or UI |
-| **External Bridges** | Describe bounded source-to-target connections | Do not become internal Engine components or transfer authority |
+| `0.0.1` | Initializing; architecture-only | [Architecture baseline](_versions/v0.0.1-initializing/DO.DML.JHSPR.1__v0.0.1__architecture.md) · [Manifest](_versions/v0.0.1-initializing/manifest.json) |
 
-Examples previously discussed include JavaScript as a code and interaction language; Python, Ruby, and PHP as possible data-processing participants; and SQLite as a data storage/query component. **These examples are not a tested compatibility matrix.**
+## System boundaries
 
-## Integration principle
+**JHSPR** is intended to coordinate participating language definitions and implementations. **MURI** (Marchand Universal Runtime Interface) displays and interacts with code. **DOLSA** defines applicable contracts and standards. **DrMarchand’s ⚙︎ Nɛuro-Forge Engine** may orchestrate permitted execution only within delegated human authority. External Bridges remain separate connectors. Data sources and storage must be identified explicitly.
 
-1. Identify each real language and implementation, with a source revision and a responsible owner.
-2. Establish explicit contracts for loading, input/output, errors, dependencies, and cross-language boundaries.
-3. Use DOLSA contracts to define expectations and conformance checks.
-4. Let MURI present and inspect the source or results without confusing UI interaction with authorization.
-5. Allow DrMarchand’s ⚙︎ Nɛuro-Forge Engine to orchestrate operations only when delegated permission exists.
-6. Record failures and positive/negative tests with exact revision and environment evidence, then preserve accepted records in 📚 DrMarchand’s ⚛︎ Library™ with authorized-human validation.
+No grammar, parser, interpreter, language loader, adapter list, DOLSA conformance suite, or multi-language runtime is claimed as verified by these documents.
 
-These steps describe a target architecture, **not a verified end-to-end execution sequence**.
+## Mirror and release discipline
 
-## Current repository evidence and gaps
+This directory is intended to be **byte-for-byte identical** across the authorized GitHub mirrors for each version. The proposed canonical authoring home is `DrMarchand/drmarchandslaboratory.com/JHSPR`. Consumers should reference that record instead of changing their copies independently.
 
-- The public Laboratory repository's main branch had no JHSPR directory before this documentation proposal. This file is a new architecture record, not recovered source code.
-- The [Engine repository](https://github.com/DrMarchand/NFE) provides a related execution-oriented codebase, but its presence does not establish JHSPR or DOLSA integration.
-- The authoritative implementation source, source revision, actual supported languages, adapter locations, syntax definition, and execution/conformance receipts remain unreconciled.
-- No installation, build, or test command is advertised because none has been established as a JHSPR command from source.
+The company versioning doctrine uses `0.0.1` for an initializing state, `0.1.0` for a stable state, and `1.0.0` for a formal release. These are **versioning conventions**, not achieved JHSPR release milestones. A future version belongs in a new `_versions/` folder; prior versions remain traceable.
 
-## Verification and promotion requirements
-
-A future implementation claim must link the exact source files and commits for language definitions, loaders, adapters, entry points, specifications, dependency manifests, and tests; demonstrate failures as well as successes; establish the authority and permission for runtime actions; and preserve receipts and permanent custody records.
-
-Do not promote a JSON exchange prototype, a directory name, a roadmap, or a successful unrelated Python command as proof that JHSPR parses or executes multiple languages.
-
-**Decision boundary:** Design Orchard LLC supplies organizational authority; an authorized human approves a release. This document grants no execution or publication permission and changes no existing rights or licenses.
+**Authority:** Design Orchard LLC; work-specific rights, public release decisions, verified implementation, receipts, and 📚 DrMarchand’s ⚛︎ Library™ custody require separate evidence and authorized-human validation.
