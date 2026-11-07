@@ -13,6 +13,7 @@ The Laboratory turns ideas into tested technical work: research, software, autom
 | Surface | Role |
 | --- | --- |
 | 🔬 DrMarchand’s Lab⚛︎ratory | Working research and development lane |
+| [JHSPR — Jasper](JHSPR/) | Versioned polyglot-language architecture record; implementation not yet verified |
 | ⚙︎ Nɛuro-Forge Engine | Bounded execution and orchestration |
 | DrMarchand’s OS™ | Presentation, navigation, routing, and lifecycle state |
 | 📚 DrMarchand’s ⚛︎ Library | Preservation, curation, and recall |
